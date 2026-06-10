@@ -21,13 +21,13 @@ body {
 
 header {
     width: 100%;
-    height: 90vh;
-    padding: 30px 2%;
-    max-height: 700px;
+    min-height: 100vh;
+    padding: 2%;
+    max-height: 1000px;
     background-size: cover;
     background-position: center;
     background-image: url('../imagens/rpg101.jpg');
-    font-weight: 300;
+ 
 }
 
 header nav {
@@ -100,11 +100,16 @@ header .logo {
 }
 
 .chamada1 {
-    padding: 10px;
-    max-width: 400px;
-    float: right;
-    margin:200px 0px;
-}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 90%;
+    max-width: 800px;
+
+    text-align: center;}
+
 
 .chamada1 h2 {
     font-size: 40px;
@@ -307,10 +312,6 @@ header .logo {
 
 
 
-
-
-
-
 .sessao1 .container {
     max-width: 1000px;
 }
@@ -388,7 +389,77 @@ header .logo {
     background-color: red;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1000px) {
+    header {
+        display: none;
+    }
+
+    header {
+        display: block;
+        background-image: url('../imagens/rpg101.jpg');
+        width: 100%;
+        height: auto;
+        /* max-height: 700px; */
+        background-size: cover;
+        background-position: center;
+    }
+
+
+
+
+    nav.desktop-menu {
+        display: none;
+    }
+
+    nav.mobile-menu {
+        display: block;
+
+    }
+
+    section.foundryvtt,
+    .sessao,
+    .sistema,
+    .discord.requisitos {
+        padding: 40px 2%;
+        height: auto;
+
+    }
+
+
+    .foundryvtt-texto,
+    .sessao-texto,
+    .sistema-texto,
+    .discord-texto,
+    .requisitos-texto {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    .chamada1 {
+        display: none;
+        
+    }
+
+
+    .logo {
+        position: relative;
+        left: 380px;
+    }
+
+    .foundryvtt-img,
+    .sessao-img,
+    .sistema-img,
+    .discord-img,
+    .requisitos-img {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
 
     nav.desktop-menu {
         display: none;
@@ -398,17 +469,21 @@ header .logo {
         display: block;
     }
 
-    section.foundryvtt,.sessao,.sistema,.discord.requisitos {
+    section.foundryvtt,
+    .sessao,
+    .sistema,
+    .discord.requisitos {
         padding: 40px 2%;
         height: auto;
 
     }
 
-      
+
     .foundryvtt-texto,
     .sessao-texto,
     .sistema-texto,
-    .discord-texto,.requisitos-texto {
+    .discord-texto,
+    .requisitos-texto {
         text-align: center;
         justify-content: center;
         margin: 0 auto;
@@ -416,14 +491,13 @@ header .logo {
     }
 
     .chamada1 {
+        display: block;
         text-align: left;
         justify-content: center;
-        margin: 0;
-        margin-left: 10px;
-        margin-top: 140px;
-
+        float:none;
     }
-    
+        
+
 
     .logo {
         position: relative;

@@ -712,5 +712,11 @@ footer p:nth-of-type(2){
     width: 14px;
     height: 14px;
 }
+footer{
+    float: none;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
 
 }

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto";
 }
 
 @font-face{
@@ -123,6 +124,7 @@ header .logo {
 }
 
 .chamada1 p {
+    text-align: center;
     font-weight: 300;
     font-size: 15px;
     color: white;
@@ -612,12 +614,15 @@ footer p:nth-of-type(2){
     max-width: 100%;
     padding-left: 0;
 }
-
-.titulo-autor {
+.titulo-autor h2, p{
+    padding-right: 0;
+    text-align: justify;
+}
+.titulo-autor{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
 }
 
 .wraper-titulo-autor {
@@ -628,17 +633,13 @@ footer p:nth-of-type(2){
     margin-top: 15px;
 }
 
-.texto-autor {
-    float: none;
-    text-align: center;
-}
 
 .slider-bullets {
     float: none;
     padding-left: 0;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 
@@ -662,17 +663,22 @@ footer p:nth-of-type(2){
         height: auto;
 
     }
-
-
-    .foundryvtt-texto,
-    .sessao-texto,
-    .sistema-texto,
-    .discord-texto,
-    .requisitos-texto {
+    .foundryvtt-texto p{
         text-align: center;
-        justify-content: center;
-        margin: 0 auto;
-        width: 85%;
+    }
+    .foundryvtt-texto li{
+        text-align: justify;
+        margin-left: 60px;
+    }
+    .requisitos-texto li{
+        text-align: justify;
+        /* margin-left: 80px; */
+    }
+    .discord-texto h2{
+        text-align: center;
+    }
+    .sessao-texto,.discord-texto,.sistema-texto p{
+        text-align: justify;
     }
 
     .chamada1 {
@@ -681,8 +687,19 @@ footer p:nth-of-type(2){
         justify-content: center;
         float:none;
     }
-        
+    
+    .container p{
+        text-align: justify;
+        padding: 10px;
+    }
+    
+    .wraper-parte1 p{
+        text-align: justify;
+    }
 
+    .texto-autor p{
+        text-align: justify;
+    }
 
     .logo {
         position: relative;
@@ -697,6 +714,7 @@ footer p:nth-of-type(2){
         display: none;
     }
 
+   
     .parte1 h2,
 .titulo-autor h2 {
     font-size: 22px;
@@ -716,6 +734,7 @@ footer p:nth-of-type(2){
 .slider-bullets span {
     width: 14px;
     height: 14px;
+    margin-top: 30px;
 }
 footer{
     float: none;

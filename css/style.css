@@ -609,14 +609,14 @@ footer p:nth-of-type(2){
     text-align: center;
 }
 
-.sobre-autor {
+.sobre-autor{
     float: none;
     max-width: 100%;
     padding-left: 0;
 }
-.titulo-autor h2, p{
+.titulo-autor h2 , p{
     padding-right: 0;
-    text-align: justify;
+    text-align: center;
 }
 .titulo-autor{
     display: flex;

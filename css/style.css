@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonte/Roboto/static/Roboto-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 
 html,
@@ -26,7 +31,7 @@ header {
     max-height: 1000px;
     background-size: cover;
     background-position: center;
-    background-image: url('../imagens/rpg101.jpg');
+    background-image: url('../imagens/rpg101.webp');
  
 }
 
@@ -154,7 +159,7 @@ header .logo {
 .foundryvtt-img {
     width: 30%;
     height: 30vh;
-    background-image: url('../imagens/fvtt-community-content-anvil-2020-09-16.png');
+    background-image: url('../imagens/fvtt-community-content-anvil-2020-09-16.webp');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -232,7 +237,7 @@ header .logo {
     margin-left: 200px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('../imagens/png-clipart-discord-computer-icons-logo-computer-software-others-miscellaneous-blue-thumbnail.png');
+    background-image: url('../imagens/png-clipart-discord-computer-icons-logo-computer-software-others-miscellaneous-blue-thumbnail.webp');
 }
 
 .sistema {
@@ -270,7 +275,7 @@ header .logo {
     margin-left: 80px;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url('../imagens/unnamed.png');
+    background-image: url('../imagens/unnamed.webp');
 }
 
 .requisitos {
@@ -305,7 +310,7 @@ header .logo {
     width: 30%;
     height: 30vh;
     margin-left: 100px;
-    background-image: url('../imagens/lucca2.png');
+    background-image: url('../imagens/lucca2.webp');
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -524,7 +529,7 @@ footer p:nth-of-type(2){
 
     header {
         display: block;
-        background-image: url('../imagens/rpg101.jpg');
+        background-image: url('../imagens/rpg101.webp');
         width: 100%;
         height: auto;
         /* max-height: 700px; */
